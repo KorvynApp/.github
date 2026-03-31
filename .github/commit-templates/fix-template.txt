@@ -1,0 +1,25 @@
+fix(área): resolve/correct/prevent [descripción del problema]
+
+# 🐛 ¿Qué bug estás corrigiendo?
+
+
+# 🔍 ¿Cuál era la causa?
+
+
+# 🔧 ¿Cómo lo solucionaste?
+
+
+# Refs: #issue-number
+# Fixes: #issue-number
+
+# 💡 Ejemplos de buenos commits de fix:
+#   fix(bluetooth): prevent memory leak in BLE scanner
+#   fix(gps): handle null location in tracking service
+#   fix(chat): resolve message duplication bug
+#   fix(database): correct SQLDelight migration syntax
+#   fix(ui): fix crash on permission denial
+
+# ✅ Checklist:
+#   - [ ] El bug está completamente corregido
+#   - [ ] Agregaste test para prevenir regresión
+#   - [ ] Verificaste que no introduce nuevos bugs

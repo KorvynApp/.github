@@ -1,0 +1,20 @@
+test(área): add/fix/improve [qué tests]
+
+# 🧪 ¿Qué tests estás agregando/mejorando?
+
+
+# 🎯 ¿Qué funcionalidad cubren?
+
+
+# 💡 Ejemplos de buenos commits de test:
+#   test(gps): add unit tests for location tracking
+#   test(bluetooth): add BLE scanner integration tests
+#   test(chat): improve message encryption tests
+#   test(ui): add UI tests for login flow
+#   test(database): fix flaky migration test
+
+# 🧩 Tipos de tests:
+#   - Unit tests
+#   - Integration tests
+#   - UI tests
+#   - End-to-end tests

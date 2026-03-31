@@ -1,0 +1,46 @@
+tipo(área): descripción corta en presente (máx 50 chars)
+
+# 🏷️ Tipos disponibles:
+#   feat      - Nueva funcionalidad
+#   fix       - Corrección de bug
+#   refactor  - Mejorar código sin cambiar funcionalidad
+#   docs      - Solo documentación
+#   test      - Agregar o corregir tests
+#   build     - Cambios en build/dependencias
+#   ci        - Cambios en CI/CD
+#   style     - Formato de código (espacios, etc)
+#   chore     - Tareas de mantenimiento
+
+# 🎯 Áreas disponibles:
+#   gps        - GPS/Ubicación
+#   bluetooth  - Bluetooth/BLE
+#   mesh       - Red Mesh
+#   chat       - Chat/Mensajería
+#   database   - Base de Datos
+#   ui         - Interfaz
+#   security   - Seguridad
+
+# Cuerpo del commit (opcional):
+# - ¿Por qué este cambio es necesario?
+# - ¿Cómo soluciona el problema?
+# - ¿Hay efectos secundarios?
+
+
+# Footer (opcional):
+# Refs: #123
+# Breaking Change: describe el breaking change aquí
+
+
+# 💡 Ejemplos:
+#   feat(gps): add background location tracking
+#   fix(bluetooth): prevent memory leak in scanner
+#   docs(database): update SQLDelight migration guide
+#   refactor(ui): simplify LoginScreen composable
+#   test(chat): add encryption unit tests
+
+# ✅ Buenas prácticas:
+#   - Usar presente: "add" no "added"
+#   - No terminar con punto
+#   - Primera letra minúscula después de ":"
+#   - Máximo 50 caracteres en la primera línea
+#   - Dejar línea en blanco antes del cuerpo

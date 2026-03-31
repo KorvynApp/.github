@@ -1,0 +1,22 @@
+refactor(área): improve/simplify/reorganize [qué estás mejorando]
+
+# 🔨 ¿Qué estás refactorizando?
+
+
+# 💡 ¿Por qué?
+
+
+# 🔄 ¿Qué cambió? (si no es obvio)
+
+
+# 💡 Ejemplos de buenos commits de refactor:
+#   refactor(database): extract repository logic to separate class
+#   refactor(gps): simplify location permission handling
+#   refactor(ui): extract reusable button components
+#   refactor(bluetooth): improve BLE scanner error handling
+#   refactor(mesh): optimize message routing algorithm
+
+# ✅ Checklist:
+#   - [ ] La funcionalidad NO cambió
+#   - [ ] Todos los tests siguen pasando
+#   - [ ] El código es más legible/mantenible

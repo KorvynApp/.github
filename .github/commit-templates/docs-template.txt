@@ -1,0 +1,21 @@
+docs(área): add/update/fix [qué documentación]
+
+# 📚 ¿Qué documentación estás cambiando?
+
+
+# 📝 ¿Por qué? (si no es obvio)
+
+
+# 💡 Ejemplos de buenos commits de docs:
+#   docs: update README with setup instructions
+#   docs(gps): add location tracking architecture guide
+#   docs(bluetooth): document BLE scanning best practices
+#   docs(database): fix typo in SQLDelight example
+#   docs: add contributing guidelines
+
+# 📋 Tipos de documentación:
+#   - README
+#   - Comentarios en código
+#   - Guías de arquitectura
+#   - API documentation
+#   - Tutoriales

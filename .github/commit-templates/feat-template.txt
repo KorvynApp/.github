@@ -1,0 +1,25 @@
+feat(área): add/implement/create [descripción]
+
+# ✨ Describe la nueva funcionalidad:
+# ¿Qué feature estás agregando?
+
+
+# ¿Por qué es necesaria?
+
+
+# ¿Cómo funciona? (si es complejo)
+
+
+# Refs: #issue-number
+
+# 💡 Ejemplos de buenos commits de feat:
+#   feat(gps): implement background location service
+#   feat(bluetooth): add BLE beacon scanner
+#   feat(chat): create offline message queue
+#   feat(ui): add emergency SOS button
+#   feat(mesh): implement message relay protocol
+
+# ✅ Checklist:
+#   - [ ] La feature funciona correctamente
+#   - [ ] Agregaste tests si es posible
+#   - [ ] Actualizaste documentación si es necesario
