@@ -1,0 +1,82 @@
+name: 📋 General Issue
+description: Cualquier otro tipo de issue
+title: "[Issue]: "
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Para casos que no encajan en las otras categorías.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 🏷️ Tipo de Issue
+      description: ¿Qué tipo de issue es este?
+      options:
+        - Tarea/Task
+        - Mejora/Enhancement
+        - Refactor
+        - Performance
+        - Investigación/Research
+        - Discusión/Discussion
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 🎯 Área Relacionada
+      options:
+        - General
+        - GPS/Ubicación
+        - Bluetooth/BLE
+        - Red Mesh
+        - Chat/Mensajería
+        - Base de Datos
+        - Interfaz (UI)
+        - Seguridad
+        - CI/CD
+        - Build/Dependencias
+        - Testing
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Descripción
+      description: Describe el issue en detalle
+      placeholder: |
+        ¿Qué necesita hacerse?
+        ¿Por qué es necesario?
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 📋 Detalles Adicionales
+      description: Cualquier información extra relevante
+      placeholder: |
+        Consideraciones:
+        - ...
+        - ...
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: ✅ Criterios de Aceptación (opcional)
+      description: ¿Cuándo se considera completado?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      options:
+        - label: Este issue no está duplicado
+          required: true
+        - label: Proporcioné suficiente información
+          required: true

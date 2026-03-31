@@ -1,0 +1,95 @@
+name: 📚 Documentation
+description: Mejorar o agregar documentación
+title: "[Docs]: "
+labels: ["docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por ayudar a mejorar la documentación!
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 📝 Tipo de Documentación
+      description: ¿Qué tipo de documentación necesita mejora?
+      options:
+        - README
+        - Guía de setup/instalación
+        - Guía de arquitectura
+        - API documentation
+        - Comentarios en código
+        - Tutorial/How-to
+        - Guía de contribución
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 🎯 Área (si aplica)
+      description: ¿Qué módulo necesita documentación?
+      options:
+        - General
+        - GPS/Ubicación
+        - Bluetooth/BLE
+        - Red Mesh
+        - Chat/Mensajería
+        - Base de Datos
+        - Interfaz (UI)
+        - Seguridad
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: ❓ Problema con la Documentación Actual
+      description: ¿Qué está faltando, incorrecto o poco claro?
+      placeholder: |
+        La documentación actual no explica...
+        Es confuso porque...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 💡 Mejora Sugerida
+      description: ¿Qué debería agregarse o cambiarse?
+      placeholder: |
+        Debería incluir:
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: 📍 Ubicación
+      description: ¿Dónde debería estar esta documentación?
+      placeholder: |
+        Archivo: README.md
+        Sección: Setup
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 🔗 Referencias (opcional)
+      description: Enlaces a recursos útiles o ejemplos
+      placeholder: |
+        - https://ejemplo.com/guia
+        - Proyecto similar que lo hace bien
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      options:
+        - label: Busqué en la documentación existente
+          required: true
+        - label: Esta mejora beneficiará a otros desarrolladores
+          required: true

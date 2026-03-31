@@ -1,0 +1,117 @@
+name: ⭐ Feature Request
+description: Proponer una nueva funcionalidad
+title: "[Feature]: "
+labels: ["feat", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por contribuir con ideas! Describe tu propuesta de feature.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📝 Resumen de la Feature
+      description: Describe brevemente qué feature quieres agregar
+      placeholder: Me gustaría que la app pudiera...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 🎯 Área Relacionada
+      description: ¿A qué módulo pertenece esta feature?
+      options:
+        - GPS/Ubicación
+        - Bluetooth/BLE
+        - Red Mesh
+        - Chat/Mensajería
+        - Base de Datos
+        - Interfaz (UI)
+        - Seguridad
+        - Otra
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🎯 Problema a Resolver
+      description: ¿Qué problema soluciona esta feature?
+      placeholder: |
+        Actualmente no es posible...
+        Esto causa problemas porque...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Solución Propuesta
+      description: ¿Cómo funcionaría esta feature?
+      placeholder: |
+        La feature debería:
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternativas Consideradas
+      description: ¿Hay otras formas de resolver esto?
+      placeholder: También consideré...
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: 🎨 Mockups / Diseños (opcional)
+      description: Si aplica, agrega mockups o wireframes
+      placeholder: Arrastra imágenes aquí
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 📊 Prioridad Sugerida
+      description: ¿Qué tan importante es esta feature?
+      options:
+        - 🔴 Alta - Bloqueante o muy necesaria
+        - 🟡 Media - Mejoraría significativamente la app
+        - 🟢 Baja - Nice to have
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 💥 Impacto en Usuarios
+      description: ¿A quién beneficia y cómo?
+      placeholder: |
+        Usuarios afectados: ...
+        Beneficios: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: 🔧 Consideraciones Técnicas (opcional)
+      description: Si conoces detalles técnicos, compártelos
+      placeholder: |
+        Posibles dependencias: ...
+        Librerías a usar: ...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      options:
+        - label: Busqué en issues existentes y esta feature no está propuesta
+          required: true
+        - label: La feature está alineada con los objetivos de Korvin
+          required: true
+        - label: Proporcioné suficiente contexto
+          required: true

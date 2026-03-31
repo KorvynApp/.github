@@ -1,0 +1,132 @@
+name: 🐛 Bug Report
+description: Reportar un error o comportamiento incorrecto
+title: "[Bug]: "
+labels: ["fix", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar este bug! Por favor completa la información para ayudarnos a resolverlo rápidamente.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Descripción del Bug
+      description: Describe claramente qué está fallando
+      placeholder: La app crashea cuando...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 🎯 Área Afectada
+      description: ¿Qué módulo está causando el problema?
+      options:
+        - GPS/Ubicación
+        - Bluetooth/BLE
+        - Red Mesh
+        - Chat/Mensajería
+        - Base de Datos
+        - Interfaz (UI)
+        - Seguridad
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 📱 Plataforma
+      description: ¿Dónde ocurre el bug?
+      options:
+        - Android
+        - iOS
+        - Ambas plataformas
+        - Desktop
+      multiple: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Pasos para Reproducir
+      description: Lista los pasos exactos para reproducir el bug
+      placeholder: |
+        1. Abrir la app
+        2. Ir a la pantalla de...
+        3. Presionar el botón...
+        4. Ver error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Comportamiento Esperado
+      description: ¿Qué debería pasar?
+      placeholder: La app debería...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Comportamiento Actual
+      description: ¿Qué está pasando en realidad?
+      placeholder: En cambio, la app...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🔥 Severidad
+      description: ¿Qué tan grave es este bug?
+      options:
+        - 🔴 Crítico - App no funciona / Pérdida de datos
+        - 🟠 Alto - Feature principal no funciona
+        - 🟡 Medio - Feature secundaria afectada
+        - 🟢 Bajo - Problema cosmético o menor
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🔧 Entorno
+      description: Información técnica del dispositivo
+      placeholder: |
+        - Dispositivo: Samsung Galaxy S21
+        - OS: Android 13
+        - Versión de la app: 1.2.0
+        - Otra información relevante
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 Logs / Screenshots
+      description: Agrega logs, capturas de pantalla o videos
+      placeholder: Pega logs o arrastra imágenes aquí
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 💡 Contexto Adicional
+      description: Cualquier otra información relevante
+      placeholder: Este bug empezó después de...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      options:
+        - label: Busqué en issues existentes y este bug no está reportado
+          required: true
+        - label: El bug es reproducible consistentemente
+          required: false
+        - label: Incluí toda la información requerida
+          required: true

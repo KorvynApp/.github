@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discusiones del Equipo
+    url: https://github.com/BrahiamSSS/Korvyn/discussions
+    about: Para preguntas generales, ideas o discusiones usa GitHub Discussions
+  - name: 📚 Documentación
+    url: https://github.com/BrahiamSSS/Korvyn/wiki
+    about: Revisa la documentación del proyecto
+  - name: 🆘 Ayuda Urgente
+    url: https://discord.gg/tu-servidor
+    about: Para ayuda urgente únete a nuestro Discord

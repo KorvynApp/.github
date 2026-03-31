@@ -1,0 +1,82 @@
+name: ❓ Question / Help
+description: Hacer una pregunta o pedir ayuda
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¿Tienes una pregunta? ¡Estamos aquí para ayudar!
+        
+        **Nota:** Para discusiones generales, considera usar GitHub Discussions.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 🎯 Área Relacionada
+      description: ¿Sobre qué módulo es tu pregunta?
+      options:
+        - General
+        - GPS/Ubicación
+        - Bluetooth/BLE
+        - Red Mesh
+        - Chat/Mensajería
+        - Base de Datos
+        - Interfaz (UI)
+        - Seguridad
+        - Setup/Configuración
+        - Testing
+        - Deployment
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ Tu Pregunta
+      description: Explica claramente qué necesitas saber
+      placeholder: ¿Cómo puedo...?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 📋 Contexto
+      description: Información adicional que ayude a entender tu pregunta
+      placeholder: |
+        Estoy intentando implementar...
+        Ya probé...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 🔍 Lo que Ya Intenté
+      description: ¿Qué has probado o investigado?
+      placeholder: |
+        - Revisé la documentación en...
+        - Probé hacer...
+        - Encontré este error...
+
+  - type: textarea
+    id: code
+    attributes:
+      label: 💻 Código Relevante (opcional)
+      description: Si aplica, comparte código relacionado
+      placeholder: |
+```kotlin
+        // Tu código aquí
+```
+      render: kotlin
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      options:
+        - label: Busqué en issues y discussions existentes
+          required: true
+        - label: Revisé la documentación disponible
+          required: true
